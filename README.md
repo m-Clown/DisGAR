@@ -1,4 +1,4 @@
-DisGAR: Machine Generated Text Detection via Disentangled Generative Artifact Representation
+# DisGAR: Machine Generated Text Detection via Disentangled Generative Artifact Representation
 
 # Dataset 
 
@@ -23,3 +23,4 @@ python DisGAR.py --do_eval
 ```
 
 More detailed setting in the `DisGAR.py`
+When using our trained weights, please note that the base model path in the `checkpoint/adapter_config.json`
