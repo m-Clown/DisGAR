@@ -403,15 +403,13 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Advanced Siamese Detector Training Script")
-    
-    # 【核心确认点】：Base Model和Tokenizer都会从这里加载
+
     parser.add_argument("--model_name_or_path", type=str, default="./model", help="base model")
     parser.add_argument("--train_file", type=str, default="./dataset/train/train.csv", help="training set path")
     parser.add_argument("--eval_file", type=str, default="./dataset/MIRAGE/polish.csv", help="test set path")
     parser.add_argument("--output_dir", type=str, default="test", help="model save path")
-    
-    # 纯验证/恢复训练时，提供这个参数
-    parser.add_argument("--checkpoint_dir", type=str, default="./checkpoint", help="model loading path")
+
+    parser.add_argument("--checkpoint_dir", type=str, default=None, help="model loading path")
     
     parser.add_argument("--do_train", action="store_true")
     parser.add_argument("--do_eval", action="store_true")
