@@ -1,5 +1,7 @@
 # DisGAR: Machine Generated Text Detection via Disentangled Generative Artifact Representation
 
+More code and documentation coming soon.
+
 # Dataset 
 
 All data is located in the `dataset` directory. Additionally, we have provided the rewritten texts by DeepSeek-V3.2 in the dataset.
